@@ -17,7 +17,7 @@ public class NoCoinState implements State {
 			if(coin==25)
 			{
 				gumballMachine.coinCost+=coin;
-				System.out.println("1 quarter received, turn crank to get gumball.");
+				System.out.println("1 quarters received, turn crank to get gumball.");
 				gumballMachine.setState(gumballMachine.getHasCoinState());
 			}
 			else
