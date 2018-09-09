@@ -1,16 +1,20 @@
 
-public class GumballMachineTypeC extends GumballMachine implements GumBallInterface
+/*
+ * Class to implement the logic for gumball machine of type which accepts quarters, dimes and nickels 
+ * */
+
+public class GumballMachineTypeC implements GumBallInterface
 {
-	//private int num_gumballs;
+	private int num_gumballs;
     private boolean has_50cents;
     private int quarter_count;
     private int dime_count;
     private int nickel_count;
     private int coins_worth;
     
+    //constructor to initialize machine
     public GumballMachineTypeC( int size )
     {
-    	super(size);
         this.num_gumballs = size;
         this.has_50cents = false;
         this.quarter_count = 0;
@@ -19,6 +23,7 @@ public class GumballMachineTypeC extends GumballMachine implements GumBallInterf
         this.coins_worth = 0;
     }
 	
+    //insert coin method checks if inserted coins are quarters, dimes or nickels and accepts the same
 	public void insertCoin(int coin)
 	{
 		if(has_50cents==false)
@@ -44,6 +49,7 @@ public class GumballMachineTypeC extends GumballMachine implements GumBallInterf
 			System.out.println("Coins worth 50 Cents inserted. Can't accept more coins.");		
 	}
 	
+	//sets has_50cents depending on whether coins worth 50 cents are feed in the machine
 	private void setHas50Cents()
 	{
 		this.coins_worth= (25 * this.quarter_count) + (10 * this.dime_count) + (5 * this.nickel_count);
@@ -54,6 +60,7 @@ public class GumballMachineTypeC extends GumballMachine implements GumBallInterf
 			this.has_50cents=false;
 	}
 	
+	//ejects all inserted coin
 	public void ejectCoin()
 	{
 		if(this.coins_worth>0)
@@ -69,6 +76,7 @@ public class GumballMachineTypeC extends GumballMachine implements GumBallInterf
 			System.out.println("No coins to eject.");
 	}
 	
+	//ejects gumball if machine has gumballs and coins worth 50 cents are inserted
 	public void turnCrank()
 	{
 		if ( this.has_50cents )

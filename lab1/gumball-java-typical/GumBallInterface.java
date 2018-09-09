@@ -1,4 +1,8 @@
 
+/*
+ * Interface to define the methods used in gumball machine classes
+ * */
+
 public interface GumBallInterface 
 {
 	public void insertCoin(int coin);

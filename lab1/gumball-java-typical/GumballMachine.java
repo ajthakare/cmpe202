@@ -1,15 +1,21 @@
 
+/*
+ * Class to implement the logic for gumball machine of type which accepts one quarters
+ * */
+
 public class GumballMachine implements GumBallInterface
 {
 	protected int num_gumballs;
     private boolean has_quarter;	
     
+    //constructor to initialize machine
     public GumballMachine( int size )
     {
         this.num_gumballs = size;
         this.has_quarter = false;
     }
 	
+  //insert coin method checks if inserted coin is a quarter and accepts the same
 	public void insertCoin(int coin) 
 	{
 		if ( coin == 25 && this.has_quarter==false )
@@ -25,6 +31,7 @@ public class GumballMachine implements GumBallInterface
         }
 	}
 
+	//ejects quarter
 	public void ejectCoin() 
 	{
 		if(this.has_quarter==true)
@@ -36,6 +43,7 @@ public class GumballMachine implements GumBallInterface
 			System.out.println("No coin to eject.");
 	}
 
+	//ejects gumball if machine has gumballs and 1 quarter is inserted
 	public void turnCrank() 
 	{
 		if ( this.has_quarter )

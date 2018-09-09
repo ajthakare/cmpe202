@@ -1,18 +1,23 @@
 
-public class GumballMachineTypeB extends GumballMachine implements GumBallInterface 
+/*
+ * Class to implement the logic for gumball machine of type which accepts two quarters
+ * */
+
+public class GumballMachineTypeB implements GumBallInterface 
 {
-	//private int num_gumballs;
+	int num_gumballs;
     private boolean has_2quarters;
     private int quarter_count;
     
+    //constructor to initialize machine
     public GumballMachineTypeB( int size )
     {
-    	super(size);
         this.num_gumballs = size;
         this.has_2quarters = false;
         this.quarter_count = 0;
     }
 	
+    //insert coin method checks if inserted coins are quarters and accepts the same
 	public void insertCoin(int coin)
 	{
 		if(this.has_2quarters==false)
@@ -33,6 +38,7 @@ public class GumballMachineTypeB extends GumballMachine implements GumBallInterf
 	}
 	
 	/*
+	//sets has_2quarters depending on whether 2 quarters are feed in the machine
 	private void setHas2quarters()
 	{
 		if(quarter_count == 2)
@@ -42,6 +48,7 @@ public class GumballMachineTypeB extends GumballMachine implements GumBallInterf
 	}
 	*/
 
+	//ejects all inserted coin
 	public void ejectCoin()
 	{
 		if(this.quarter_count>0)
@@ -54,6 +61,7 @@ public class GumballMachineTypeB extends GumballMachine implements GumBallInterf
 			System.out.println("No coin to eject.");		
 	}
 
+	//ejects gumball if machine has gumballs and 2 quarters are inserted
 	public void turnCrank()
 	{
 		if ( this.has_2quarters )
