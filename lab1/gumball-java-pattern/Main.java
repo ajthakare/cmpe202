@@ -3,6 +3,10 @@
 public class Main {
 
 	public static void main(String[] args) {
+		
+		//initialization of three types of gumball machines. Only one machine can be used at a time. Uncomment out the machine object you want
+		//to use here and comment in the other machine objects you don't want to use.
+		
 		GumballMachine gumballMachine = new GumballMachine(5,"TypeA");
 		//GumballMachine gumballMachine = new GumballMachine(5,"TypeB");
 		//GumballMachine gumballMachine = new GumballMachine(2,"TypeC");
