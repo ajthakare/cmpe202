@@ -14,7 +14,7 @@ CRC Cards:
 
     Responsibilities:
     a. Keeps track of waiting parties at restaurant;
-    b. Keep tracks of busy and available tables;
+    b. Keeps tracks of busy and available tables;
     c. Sends table availability updates to parties;
     d. Receives confirmation/cancellation for table booking from party;
     
@@ -27,3 +27,9 @@ CRC Cards:
     b. Provides availability for party to waitlist;
     
     Collaborators: Waitlist
+
+
+Object Collaboration:
+
+    I have selected observer design pattern to display the collaboration between Waitlist and Party as the relation between the two can be depicted using the subject-observer pattern, waitlist being the subject and party as observer.
+    To display the states of Table, I have used state diagram.
