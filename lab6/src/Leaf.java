@@ -20,11 +20,6 @@ public class Leaf implements Component {
         price = 0.0 ;
     }
     
-    public void printReceipt() {
-        DecimalFormat fmt = new DecimalFormat("0.00");
-        System.out.println( " " + description + " Total " + fmt.format(price) ) ;
-    }
-
     public void addChild(Component c) {
 	    // no implementation
 	}
@@ -37,11 +32,15 @@ public class Leaf implements Component {
         // no implementation
         return null ;
 	}
-
-	public void packageslip() {
-		System.out.println( " In Leaf class " ) ;
-		
+	
+	@Override
+	public void setPrintStrategy(PrintStrategy s) {
+		// TODO Auto-generated method stub		
 	}
-	 
+
+	@Override
+	public void printSlip() {
+		// TODO Auto-generated method stub		
+	}
 }
  

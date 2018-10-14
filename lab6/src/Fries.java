@@ -1,8 +1,7 @@
 public class Fries extends LeafDecorator
 {
-    private String option ;
-    private double total ;
-    protected int friesno = 0;
+	protected String option ;
+	protected double total ;
 
 
     
@@ -10,7 +9,6 @@ public class Fries extends LeafDecorator
     {
         super(d) ;
         setOptions(d);
-        friesno++;
     }
     
     public void setOptions( String option )
@@ -48,40 +46,12 @@ public class Fries extends LeafDecorator
     		this.price += total ;
     		break;
         }
-    		
-    	/*	
-        for ( int i = 0; i<options.length; i++ )
-        {
-            if ( "LTL CAJ".equals(options[i]) ) this.price += 2.79 ;
-            if ( "REG CAJ".equals(options[i]) ) this.price += 3.39 ;
-            if ( "LAR CAJ".equals(options[i]) ) this.price += 5.59 ;
-            if ( "LTL 5G".equals(options[i]) ) this.price += 2.79 ;
-            if ( "REG 5G".equals(options[i]) ) this.price += 3.39 ;
-            if ( "LAR 5G".equals(options[i]) ) this.price += 5.59 ;
-        }
-        */
-    }
-    
-    public String getDescription() 
-    {
-        String desc = "" ;
-        desc += "\n"+friesno+"\t" + option + "\t\t" +total ;
-               
-        return desc ;
     }
 
 	@Override
 	public void setOptions(String[] options) {
 		// TODO Auto-generated method stub
-		
 	}
 
-	@Override
-	public String getPackageSlip() {
-		String desc = "" ;
-        desc += "\n"+friesno+"\t" + option ;
-               
-        return desc ;
-	}
     
 }

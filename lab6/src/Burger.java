@@ -1,8 +1,7 @@
 public class Burger extends LeafDecorator
 {
-    private String option ;
-    private double total ;
-    private static int burgerno = 0;
+    protected String option ;
+    protected double total ;
 
 
     
@@ -10,7 +9,6 @@ public class Burger extends LeafDecorator
     {
         super(d) ;
         setOptions(d);
-        burgerno++;
     }
     
     public void setOptions( String option )
@@ -44,36 +42,7 @@ public class Burger extends LeafDecorator
         		this.price += total ;
         		break;
         }
-        
-        /*
-            if ( "HamB".equals(options) ) this.price += 6.39 ;
-            if ( "CheeseB".equals(options) ) this.price += 7.19 ;
-            if ( "BaconB".equals(options) ) this.price += 7.19 ;
-            if ( "BaconCB".equals(options) ) this.price += 7.79 ;
-            if ( "LHB".equals(options) ) this.price += 4.59 ;
-            if ( "LCB".equals(options) ) this.price += 5.29 ;
-            if ( "LBB".equals(options) ) this.price += 5.59 ;
-            if ( "LBCB".equals(options) ) this.price += 6.19 ;
-            */
-        
-    }
-    
-    public String getDescription() 
-    {
-        String desc = "" ;
-        desc += "\n"+burgerno+"\t" + option + "\t\t" +total ;
-        desc += "\n\t{{{{ BACON }}}}";
-              
-        return desc ;
-    }
-    
-    public String getPackageSlip() 
-    {
-        String desc = "" ;
-        desc += "\n"+burgerno+"\t" + option ;
-        
-              
-        return desc ;
+                
     }
 
 	@Override
