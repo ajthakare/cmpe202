@@ -9,7 +9,7 @@ public class BuildOrder {
         Burger b = new Burger( "LBB" ) ;
                 
         Toppings t = new Toppings( "Toppings Options" ) ;
-        String[] to = { "Lettuce", "G Onion", "JALA Grilled", "Tomato" } ;
+        String[] to = { "Lettuce", "Tomato", "G Onion", "JALA Grilled" } ;
         t.setOptions( to ) ;
         
         Fries f = new Fries("LTL CAJ");
