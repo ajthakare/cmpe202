@@ -2,7 +2,7 @@
 
 public class Client {
 
-    public static void run()
+    public static void runTest()
     {
         Component theOrder = BuildOrder.getOrder() ;
         theOrder.printDescription();
