@@ -1,7 +1,7 @@
 /* (c) Copyright 2018 Paul Nguyen. All Rights Reserved */
 
 /**
- * Main App Class for Displaying Screen.
+ *  Main App Class for Displaying Screen.
  */
 public class App {
 
@@ -15,9 +15,7 @@ public class App {
 
         screen = new Screen();
         num = new CreditCardNum();
-        num.wrapDecorator(new CardNumDecorator());
         exp = new CreditCardExp();
-        exp.wrapDecorator(new CardExpDecorator());
         cvc = new CreditCardCVC();
 
         screen.addSubComponent(num);
@@ -41,21 +39,9 @@ public class App {
     }
 
     public void key(String ch) {
-        // count++;
-        if (ch.matches("X|x")) {
-            // System.out.println("Count: " + count);
-            screen.key(ch, count);
-            if (count > 0)
-                count--;
-        }
-        if (ch.matches("0|1|2|3|4|5|6|7|8|9")) {
-            if (count < 23) {
-                count++;
-                // System.out.println("Count: " + count);
-                screen.key(ch, count);
-            }
-        }
-
+        count++;
+        screen.key(ch, count);
     }
 
 }
+
