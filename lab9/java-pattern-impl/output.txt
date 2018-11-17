@@ -1,0 +1,13 @@
+Package Slip: 
+	Cheese on Top bun
+	Tomato on Bottom bun
+	Lettuce on Top bun
+	Onion on Bottom bun
+	Meat on Top bun
+
+Receipt Slip: 
+	Cheese $0.49
+	->Tomato $0.29
+	Lettuce $0.29
+	->Onion $0.29
+	Meat $0.99

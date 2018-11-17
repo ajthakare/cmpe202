@@ -1,0 +1,17 @@
+
+ Lambda Function Output
+
+Package Slip:
+	Cheese on Top bun
+	Tomato on Bottom bun
+	Lettuce on Top bun
+	Onion on Bottom bun
+	Meat on Top bun
+
+Receipt Slip:
+	Cheese $0.29
+	->Tomato $0.49
+	Lettuce $0.29
+	->Onion $0.99
+	Meat $0.29
+
