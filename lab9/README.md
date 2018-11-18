@@ -12,4 +12,9 @@
 ## Lab 9 submission-
 
 - The folder 'java-pattern-impl' has implementation using the strategy design pattern.
+- Output:
+![Design Pattern Output](./java-pattern-impl/output.png)
+
 - The folder 'java-lambda-impl' has implementation using lambda functions.
+- Output:
+![Lambda Function Output](./java-lambda-impl/output.png)
