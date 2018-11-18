@@ -1,4 +1,3 @@
-package lab9;
 
 public class PackageSlipStrategy implements IStrategy {
 
