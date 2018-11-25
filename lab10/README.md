@@ -3,7 +3,7 @@
 
 ### Summary
 
-- Summary here
+- Lab1 was implemented by creating a derived class for each type of gumball machine. Whereas with AspectJ, we need to implement a single machine with different configurations. These configurations can be changed easily to achieve desired output. The overall code for implementing the gumball machine has also reduces due to AspectJ.
 
 ### Lab 10 Screenshots-
 
